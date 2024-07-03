@@ -1,7 +1,7 @@
 import NavBar from "@/components/NavBar";
 import Image from "next/image";
-import value from "./../../image/values.jpg";
-import value2 from "./../../image/values-1.jpg";
+import value from "../../app/../../public/image/values.jpg";
+import value2 from "../../app/../../public/image/values-1.jpg";
 import Footer from "@/components/footer";
 export default function aboutUS() {
   return (

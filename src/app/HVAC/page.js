@@ -1,7 +1,7 @@
 import ProductsNav from "@/components/NavBars/productsNav";
 import Image from "next/image";
-import hvac from "./../../image/hvac.png";
-import ducting from "./../../image/ducting.jpg";
+import hvac from "../../app/../../public/image/hvac.png";
+import ducting from "../../app/../../public/image/ducting.jpg";
 import Footer from "@/components/footer";
 export default function HVAC() {
   return (

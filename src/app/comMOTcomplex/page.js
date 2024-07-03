@@ -1,8 +1,9 @@
 "use-client";
 import ServiceNav from "@/components/NavBars/serviceNav";
+
 import Image from "next/image";
-import MOT from "./../../image/MOT.png";
-import MOT2 from "./../../image/MotComplex.jpg";
+import MOT from "../../app/../../public/image/MOT.png";
+import MOT2 from "../../app/../../public/image/MotComplex.jpg";
 import Footer from "@/components/footer";
 export default function ComMotComplex() {
   return (

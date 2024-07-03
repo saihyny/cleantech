@@ -1,6 +1,7 @@
 import NavBar from "@/components/NavBar";
 import Image from "next/image";
-import contact from "./../../image/contact.jpg";
+// import contact from "../../app/../../public/image/contact.jpg";
+import contact from '../../app/../../public/image/contact.jpg'
 import Footer from "@/components/footer";
 import Link from "next/link";
 export default function contactUS() {

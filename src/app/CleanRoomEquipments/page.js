@@ -1,9 +1,9 @@
 "use client";
 import ProductsNav from "@/components/NavBars/productsNav";
 import Image from "next/image";
-import passbox from "./../../image/passbox.jpg";
-import scrub from "./../../image/scrub.jpeg";
-import pvc from "./../../image/pvc.jpg";
+import passbox from "../../app/../../public/image/passbox.jpg";
+import scrub from "../../app/../../public/image/scrub.jpeg";
+import pvc from "../../app/../../public/image/pvc.jpg";
 import Footer from "@/components/footer";
 export default function CleanRoomEquipments() {
   return (

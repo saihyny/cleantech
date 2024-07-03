@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import ServicesMobileNav from "./servicesMobileNav";
-import logo from "./../../image/logo.png";
+import logo from "../../app/../../public/image/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

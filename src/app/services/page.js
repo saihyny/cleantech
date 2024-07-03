@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import ivf2 from "./../../image/ivf2.jpg";
-import icu from "./../../image/icu.png";
-import MOT from "./../../image/MOT.png";
-import panel1 from "./../../image/panel1.jpg";
-import passbox from "./../../image/passbox.jpg";
-import hvac from "./../../image/hvac.png";
+import ivf2 from "../../app/../../public/image/ivf2.jpg";
+import icu from "../../app/../../public/image/icu.png";
+import MOT from "../../app/../../public/image/MOT.png";
+import panel1 from "../../app/../../public/image/panel1.jpg";
+import passbox from "../../app/../../public/image/passbox.jpg";
+import hvac from "../../app/../../public/image/hvac.png";
 export default function Services() {
   return (
     <div className="h-auto w-screen bg-transparent border-solid border-2 mb-10">

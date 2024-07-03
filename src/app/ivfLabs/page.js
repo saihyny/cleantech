@@ -1,7 +1,7 @@
 import ServiceNav from "@/components/NavBars/serviceNav";
 import Image from "next/image";
-import ivf from "./../../image/ivf.jpg";
-import ivf2 from "./../../image/ivf2.jpg";
+import ivf from "../../app/../../public/image/ivf.jpg";
+import ivf2 from "../../app/../../public/image/ivf2.jpg";
 import Footer from "@/components/footer";
 
 export default function IVFlabs() {

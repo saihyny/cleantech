@@ -1,7 +1,7 @@
 import ServiceNav from "@/components/NavBars/serviceNav";
 import Image from "next/image";
-import icu from "./../../image/icu.png";
-import icu2 from "./../../image/icu2.jpg";
+import icu from "../../app/../../public/image/icu.png";
+import icu2 from "../../app/../../public/image/icu2.jpg";
 import Footer from "@/components/footer";
 export default function ModularICU() {
   return (

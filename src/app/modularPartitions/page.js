@@ -1,11 +1,11 @@
 import ProductsNav from "@/components/NavBars/productsNav";
 import Image from "next/image";
-import panel1 from "./../../image/panel1.jpg";
-import panel2 from "./../../image/panel2.jpg";
-import panel from "./../../image/panel.jpg";
-import door1 from "./../../image/door1.jpg";
-import door2 from "./../../image/door2.jpg";
-import door3 from "./../../image/door3.jpg";
+import panel1 from "../../app/../../public/image/panel1.jpg";
+import panel2 from "../../app/../../public/image/panel2.jpg";
+import panel from "../../app/../../public/image/panel.jpg";
+import door1 from "../../app/../../public/image/door1.jpg";
+import door2 from "../../app/../../public/image/door2.jpg";
+import door3 from "../../app/../../public/image/door3.jpg";
 import Footer from "@/components/footer";
 
 export default function ModularPartitions() {
