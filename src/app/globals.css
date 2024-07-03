@@ -167,7 +167,7 @@ body {
 
 }
 .hero-section {  
-	background-image: url('./../image/target.jpg');
+	background-image: url('../app/../../public/image/target.jpg');
 	background-size: cover;  /* Cover the entire container */
 	background-position: center;  /* Center the image */
 	background-repeat: no-repeat;  /* Prevent image repetition */

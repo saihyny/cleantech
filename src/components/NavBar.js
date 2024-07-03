@@ -1,5 +1,5 @@
 "use client"; //use client is used for Client Components
-import logo from "../image/logo.png";
+// import logo from "../image/logo.png";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -39,7 +39,7 @@ export default function NavBar() {
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <Image
-            src={logo}
+            src='/image/logo.png'
             width={220}
             height={150}
             className="h-14"

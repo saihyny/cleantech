@@ -1,7 +1,5 @@
 import ServiceNav from "@/components/NavBars/serviceNav";
 import Image from "next/image";
-import ivf from "../../app/../../public/image/ivf.jpg";
-import ivf2 from "../../app/../../public/image/ivf2.jpg";
 import Footer from "@/components/footer";
 
 export default function IVFlabs() {
@@ -11,16 +9,22 @@ export default function IVFlabs() {
       <div className=" flex justify-center flex-col h-auto w-screen  border-solid border-5 border-y-black ">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10  ">
           <Image
-            src={ivf}
+            src='/image/ivf.jpg'
             alt="mot"
+            layout="fixed"
+            width={900}
+            height={500}
             objectFit="cover"
             className="h-[500px] w-auto lg:w-[900px] rounded-lg"
           />
           <Image
-            src={ivf2}
+            src='/image/ivf2.jpg'
             alt="mot"
+            layout="fixed"
+            width={900}
+            height={500}
             objectFit="cover"
-            className="h-[500px] w-auto rounded-lg"
+            className="h-[500px] w-auto lg:w-[900px] rounded-lg"
           />
         </div>
         <div className="h-full">

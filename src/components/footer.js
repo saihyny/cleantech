@@ -1,4 +1,4 @@
-import logo from './../image/logo.png'
+// import logo from './../image/logo.png'
 import Image from "next/image";
 import Link from "next/link";
 export default function Footer() {
@@ -11,7 +11,7 @@ export default function Footer() {
             class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
             <Image
-            src={logo}
+            src='/image/logo.png'
             width={220}
             height={150}
             className="h-14"

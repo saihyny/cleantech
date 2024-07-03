@@ -1,9 +1,6 @@
 "use client";
 import ProductsNav from "@/components/NavBars/productsNav";
 import Image from "next/image";
-import passbox from "../../app/../../public/image/passbox.jpg";
-import scrub from "../../app/../../public/image/scrub.jpeg";
-import pvc from "../../app/../../public/image/pvc.jpg";
 import Footer from "@/components/footer";
 export default function CleanRoomEquipments() {
   return (
@@ -11,8 +8,11 @@ export default function CleanRoomEquipments() {
       <ProductsNav />
       <div className=" md:flex ">
         <Image
-          src={passbox}
+          src='/image/passbox.jpg'
           alt="mot"
+          layout="fixed"
+          height={500}
+          width={500}
           objectFit="cover"
           className="h-[500px] w-[500px] rounded-lg"
         />
@@ -33,8 +33,11 @@ export default function CleanRoomEquipments() {
       </div>
       <div className=" md:flex  mt-3">
         <Image
-          src={scrub}
+          src='/image/scrub.jpeg'
           alt="mot"
+          layout="fixed"
+          height={400}
+          width={500}
           objectFit="cover"
           className="h-[400px] w-[500px] rounded-lg"
         />
@@ -56,8 +59,11 @@ export default function CleanRoomEquipments() {
       <div className=" md:flex  mt-3">
       
         <Image
-          src={pvc}
+          src='/image/pvc.jpg'
           alt="mot"
+          layout="fixed"
+          height={400}
+          width={500}
           objectFit="cover"
           className="h-[400px] w-[500px] rounded-lg"
         />

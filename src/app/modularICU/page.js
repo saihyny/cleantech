@@ -1,7 +1,5 @@
 import ServiceNav from "@/components/NavBars/serviceNav";
 import Image from "next/image";
-import icu from "../../app/../../public/image/icu.png";
-import icu2 from "../../app/../../public/image/icu2.jpg";
 import Footer from "@/components/footer";
 export default function ModularICU() {
   return (
@@ -10,14 +8,20 @@ export default function ModularICU() {
       <div className=" flex justify-center flex-col h-auto w-screen  border-solid border-5 border-y-black ">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-1  ">
           <Image
-            src={icu}
+            src='/image/icu.png'
             alt="mot"
+            layout="fixed"
+            height={500}
+            width={900}
             objectFit="cover"
             className="h-[500px] w-auto lg:w-[900px] rounded-lg"
           />
           <Image
-            src={icu2}
+            src='/image/icu2.jpg'
             alt="mot"
+            layout="fixed"
+            height={500}
+            width={900}
             objectFit="cover"
             className="h-[500px] w-auto rounded-lg"
           />

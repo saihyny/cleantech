@@ -1,11 +1,5 @@
 import ProductsNav from "@/components/NavBars/productsNav";
 import Image from "next/image";
-import panel1 from "../../app/../../public/image/panel1.jpg";
-import panel2 from "../../app/../../public/image/panel2.jpg";
-import panel from "../../app/../../public/image/panel.jpg";
-import door1 from "../../app/../../public/image/door1.jpg";
-import door2 from "../../app/../../public/image/door2.jpg";
-import door3 from "../../app/../../public/image/door3.jpg";
 import Footer from "@/components/footer";
 
 export default function ModularPartitions() {
@@ -15,20 +9,29 @@ export default function ModularPartitions() {
       <div className=" flex justify-center flex-col h-auto w-screen  border-solid border-5 border-y-black ">
         <div className="grid md:grid-cols-3 grid-cols-1 gap-3  ">
           <Image
-            src={panel1}
+            src='/image/panel1.jpg'
+            layout="fixed"
+            height={500}
+            width={900}
             alt="mot"
             objectFit="cover"
             className="h-[500px] w-auto lg:w-[900px] rounded-lg"
           />
           <Image
-            src={panel2}
+            src='/image/panel2.jpg'
             alt="mot"
+            layout="fixed"
+            height={500}
+            width={900}
             objectFit="cover"
             className="h-[500px] w-[500px] rounded-lg"
           />
           <Image
-            src={panel}
+            src='/image/panel.jpg'
             alt="mot"
+            layout="fixed"
+            height={500}
+            width={900}
             objectFit="cover"
             className="h-[500px] w-auto rounded-lg"
           />
@@ -53,20 +56,29 @@ export default function ModularPartitions() {
           </p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-20 mt-10 ">
           <Image
-            src={door1}
+            src='/image/door1.jpg'
             alt="mot"
+            layout="fixed"
+            height={500}
+            width={900}
             objectFit="cover"
-            className="h-[500px] w-auto lg:w-[900px] rounded-lg"
+            className="h-[500px] w-auto  rounded-lg"
           />
           <Image
-            src={door2}
+            src='/image/door2.jpg'
             alt="mot"
+            layout="fixed"
+            height={500}
+            width={900}
             objectFit="cover"
             className="h-[500px] w-[500px] rounded-lg"
           />
           <Image
-            src={door3}
+            src='/image/door3.jpg'
             alt="mot"
+            layout="fixed"
+            height={500}
+            width={900}
             objectFit="cover"
             className="h-[500px] w-auto rounded-lg"
           />

@@ -1,11 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import ivf2 from "../../app/../../public/image/ivf2.jpg";
-import icu from "../../app/../../public/image/icu.png";
-import MOT from "../../app/../../public/image/MOT.png";
-import panel1 from "../../app/../../public/image/panel1.jpg";
-import passbox from "../../app/../../public/image/passbox.jpg";
-import hvac from "../../app/../../public/image/hvac.png";
 export default function Services() {
   return (
     <div className="h-auto w-screen bg-transparent border-solid border-2 mb-10">
@@ -20,8 +14,11 @@ export default function Services() {
       <div className="grid  md:grid-cols-3 grid-cols-1  rounded-md w-auto h-auto gap-2  ">
         <div className=" text-center rounded-md bg-orange-400 shadow-2xl">
           <Image
-            src={MOT}
+            src='/image/MOT.png'
             alt="mot"
+            layout="fixed"
+            height={200}
+            width={600}
             objectFit="cover"
             className="h-[200px] w-full rounded-lg"
           />
@@ -36,8 +33,11 @@ export default function Services() {
         </div>
         <div className=" rounded-md  bg-orange-400 shadow-2xl ">
           <Image
-            src={icu}
+            src='/image/icu.png'
             alt="mot"
+            layout="fixed"
+            height={200}
+            width={600}
             objectFit="cover"
             className="h-[200px] w-full rounded-lg"
           />
@@ -50,8 +50,11 @@ export default function Services() {
         </div>
         <div className=" rounded-md  bg-orange-400 shadow-2xl">
           <Image
-            src={ivf2}
+            src='/image/ivf2.jpg'
             alt="mot"
+            layout="fixed"
+            height={200}
+            width={600}
             objectFit="cover"
             className="h-[200px] w-full rounded-lg"
           />
@@ -74,8 +77,11 @@ export default function Services() {
       <div className="grid  md:grid-cols-3 grid-cols-1  rounded-md w-auto h-auto gap-2  ">
         <div className=" text-center rounded-md  bg-orange-400 shadow-2xl ">
           <Image
-            src={panel1}
+            src='/image/panel1.jpg'
             alt="mot"
+            layout="fixed"
+            height={200}
+            width={600}
             objectFit="cover"
             className="h-[200px] w-full rounded-lg"
           />
@@ -88,8 +94,11 @@ export default function Services() {
         </div>
         <div className="text-center rounded-md  bg-orange-400 shadow-2xl ">
           <Image
-            src={passbox}
+            src='/image/passbox.jpg'
             alt="mot"
+            layout="fixed"
+            height={200}
+            width={600}
             objectFit="cover"
             className="h-[200px] w-full rounded-lg"
           />
@@ -102,8 +111,11 @@ export default function Services() {
         </div>
         <div className=" rounded-md  bg-orange-400 shadow-2xl">
           <Image
-            src={hvac}
+            src='/image/hvac.png'
             alt="mot"
+            layout="fixed"
+            height={200}
+            width={600}
             objectFit="cover"
             className="h-[200px] w-full rounded-lg"
           />

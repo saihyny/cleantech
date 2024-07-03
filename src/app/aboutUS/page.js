@@ -1,26 +1,28 @@
 import NavBar from "@/components/NavBar";
 import Image from "next/image";
-import value from "../../app/../../public/image/values.jpg";
-import value2 from "../../app/../../public/image/values-1.jpg";
 import Footer from "@/components/footer";
 export default function aboutUS() {
   return (
     <>
+      <div className="absolute z-10">
       <NavBar />
-      <div className="mt-10">
-        <span className=" hidden xl:block absolute xl:top-[300px] xl:left-[50px]
-        
-        text-transparent bg-clip-text bg-gradient-to-r to-slate-100 from-sky-100 pl-5 pb-5  text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl ">
-          About Us
-        </span>
-        <Image src={value} objectFit="cover" className="h-auto w-auto top-0" />
-        {/* <span className="absolute top-50px">About Us</span> */}
+      </div>     
+      <div className=" relative w-full h-[300px] z-1 ">
+        <Image
+          src="/image/values.jpg"
+          objectFit="cover"
+          layout="fill"
+          className="h-auto w-auto top-0"
+        />
       </div>
       <div className=" flex justify-start h-auto w-screen bg-transparent text-white mt-5  ">
         <Image
-          src={value2}
+          src='/image/values-1.jpg'
           objectFit="cover"
-          className=" hidden xl:block xl:h-[900px] xl:w-[600px]   ml-10 rounded-sm "
+          layout="fixed"
+          width={500}
+          height={900}
+          className=" hidden xl:block xl:h-[900px] xl:w-[500px]   ml-10 rounded-sm "
         />
         <div>
           <h1 class="mb-6 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">

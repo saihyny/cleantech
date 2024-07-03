@@ -1,26 +1,21 @@
 import NavBar from "@/components/NavBar";
 import Image from "next/image";
-// import contact from "../../app/../../public/image/contact.jpg";
-import contact from '../../app/../../public/image/contact.jpg'
 import Footer from "@/components/footer";
 import Link from "next/link";
 export default function contactUS() {
   return (
     <div className="">
-      <NavBar />
-      <div className="">
-        <span
-          className=" hidden xl:block absolute xl:top-[300px] xl:left-[50px]
-         text-transparent bg-clip-text bg-gradient-to-r to-slate-100 from-sky-100 pl-5 pb-5  text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl "
-        >
-          Contact Us
-        </span>
+      <div className="absolute z-10">
+        <NavBar />
+      </div>
+
+      <div className="relative w-full h-[300px]">
         <Image
-          src={contact}
+          src="/image/contact.jpg"
+          layout="fill"
           objectFit="cover"
           className="h-auto w-auto top-0"
         />
-        {/* <span className="absolute top-50px">About Us</span> */}
       </div>
       <div className=" flex justify-center items-center h-auto w-screen bg-transparent text-white mt-5  ">
         <div class="card">
@@ -31,7 +26,8 @@ export default function contactUS() {
           <span class="title">Quthbullabpur Main Road</span>
           <span class="title">Hyderabad - 500055. Telangana, India.</span>
           <span class="desc">
-          You can use Google Maps to find the location by clicking the link below.
+            You can use Google Maps to find the location by clicking the link
+            below.
           </span>
           <div class="buttons">
             <Link
@@ -80,9 +76,8 @@ export default function contactUS() {
         <div></div>
       </div>
       <div className="mb-0">
-      <Footer />
+        <Footer />
       </div>
-      
     </div>
   );
 }

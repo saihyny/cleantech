@@ -1,9 +1,6 @@
 "use-client";
 import ServiceNav from "@/components/NavBars/serviceNav";
-
 import Image from "next/image";
-import MOT from "../../app/../../public/image/MOT.png";
-import MOT2 from "../../app/../../public/image/MotComplex.jpg";
 import Footer from "@/components/footer";
 export default function ComMotComplex() {
   return (
@@ -12,14 +9,20 @@ export default function ComMotComplex() {
       <div className=" flex justify-center flex-col h-auto w-screen  border-solid border-5 border-y-black ">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-1  ">
           <Image
-            src={MOT}
+            src='/image/MOT.png'
             alt="mot"
+            layout="fixed"
+            width={900}
+            height={500}
             objectFit="cover"
             className="h-[500px] w-auto lg:w-[900px] rounded-lg"
           />
           <Image
-            src={MOT2}
+            src='/image/MotComplex.jpg'
             alt="mot"
+            layout="fixed"
+            width={900}
+            height={500}
             objectFit="cover"
             className="h-[500px] w-auto rounded-lg"
           />

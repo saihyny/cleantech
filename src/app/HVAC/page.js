@@ -1,7 +1,5 @@
 import ProductsNav from "@/components/NavBars/productsNav";
 import Image from "next/image";
-import hvac from "../../app/../../public/image/hvac.png";
-import ducting from "../../app/../../public/image/ducting.jpg";
 import Footer from "@/components/footer";
 export default function HVAC() {
   return (
@@ -10,16 +8,22 @@ export default function HVAC() {
       <div className=" flex justify-center flex-col h-auto w-screen  border-solid border-5 border-y-black md:mt-20 mt-40 ">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-1  ">
           <Image
-            src={hvac}
+            src='/image/hvac.png'
             alt="mot"
+            layout="fixed"
+            width={900}
+            height={400}
             objectFit="cover"
-            className="h-full w-auto lg:w-full rounded-lg"
+            className="h-[400px] w-auto lg:w-full rounded-lg"
           />
           <Image
-            src={ducting}
+            src='/image/ducting.jpg'
             alt="mot"
+            layout="fixed"
+            width={900}
+            height={400}
             objectFit="cover"
-            className="h-auto w-auto rounded-lg"
+            className="h-[400px] w-auto lg:w-full rounded-lg"
           />
         </div>
         <div className="h-full">

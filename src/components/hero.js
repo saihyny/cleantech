@@ -1,9 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import img from "../image/cleanTech.jpg";
-import img2 from "../image/cleanTech2.jpg";
-import img3 from "../image/cleanTech3.jpg";
-import img4 from "../image/logo.png";
+
 import NavBar from "./NavBar";
 function HeroSection() {
   return (
@@ -53,14 +50,15 @@ function HeroSection() {
           </div>
         </section>
         <section class=" absolute md:mt-[80px]  text-dark w-full  ">
-        <div class="mx-auto max-w-3xl text-center  absolute px-auto ">
-            <h1 class="bg-blue-500 bg-clip-text  sm:text-4xl  text-2xl font-extrabold  text-transparent underline leading-none tracking-tight underline-offset-1 decoration-8 decoration-blue-200 dark:decoration-blue-600 
-            dark:text-white px-5 pb-10 ">
+          <div class="mx-auto max-w-3xl text-center  absolute px-auto ">
+            <h1
+              class="bg-blue-500 bg-clip-text  sm:text-4xl  text-2xl font-extrabold  text-transparent underline leading-none tracking-tight underline-offset-1 decoration-8 decoration-blue-200 dark:decoration-blue-600 
+            dark:text-white px-5 pb-10 "
+            >
               Accompaniments Details for the Elements
             </h1>
           </div>
           <div class="mx-auto w-full text-black border-solid border-2 m px-2 py-[85px]  rounded-md bg-white dark:bg-black grid grid-cols-1 lg:grid-cols-3  ">
-       
             <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-xl font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-4 px-2 pb-5 sm:text-sm border-solid dark:text-white ">
               Air Handling Units
             </span>
@@ -111,31 +109,35 @@ function HeroSection() {
       <div className="banner ">
         <div className="bg-white md:hidden "></div>
         <div className="hidden md:block  ">
-          <div className="">
+          <div className=" ">
             <Image
-              src={img}
+              src="/image/cleanTech.jpg"
               alt="img"
+              layout="fill"
               objectFit="cover"
               sizes=""
               className="banner-img h-full lg:h-[90%] xl:h-[100%]"
             />
             <Image
-              src={img2}
+              src="/image/cleanTech2.jpg"
               alt="img"
+              layout="fill"
               objectFit="cover"
               sizes=""
               className="banner-img h-full lg:h-[90%] xl:h-[100%]"
             />
             <Image
-              src={img3}
+              src="/image/cleanTech3.jpg"
               alt="img"
+              layout="fill"
               objectFit="cover"
               sizes=""
               className="banner-img h-full lg:h-[90%] xl:h-[100%]"
             />
             <Image
-              src={img4}
+              src="/image/logo.png"
               alt="img"
+              layout="fill"
               sizes=""
               objectFit="cover"
               className="banner-img h-full lg:h-[90%] xl:h-[100%]"
