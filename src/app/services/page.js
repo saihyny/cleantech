@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Services() {
   return (
-    <div className="h-auto w-screen bg-transparent border-solid border-2 mb-10">
+    <div className="h-auto w-screen bg-transparent  mb-10">
       <div className=" flex  justify-center  items-start">
         <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5  ">
           <span className="border-l-[10px] border-orange-600 border-solid pl-2">

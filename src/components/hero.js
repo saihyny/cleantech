@@ -58,7 +58,7 @@ function HeroSection() {
               Accompaniments Details for the Elements
             </h1>
           </div>
-          <div class="mx-auto w-full text-black border-solid border-2 m px-2 py-[85px]  rounded-md bg-white dark:bg-black grid grid-cols-1 lg:grid-cols-3  ">
+          <div class="mx-auto w-full text-black  m px-2 py-[85px]  rounded-md bg-white dark:bg-black grid grid-cols-1 lg:grid-cols-3  ">
             <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-xl font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-4 px-2 pb-5 sm:text-sm border-solid dark:text-white ">
               Air Handling Units
             </span>
@@ -113,7 +113,9 @@ function HeroSection() {
             <Image
               src="/image/cleanTech.jpg"
               alt="img"
-              layout="fill"
+              layout="fixed"
+              height={1200}
+              width={1200}
               objectFit="cover"
               sizes=""
               className="banner-img h-full lg:h-[90%] xl:h-[100%]"
@@ -121,7 +123,9 @@ function HeroSection() {
             <Image
               src="/image/cleanTech2.jpg"
               alt="img"
-              layout="fill"
+              layout="fixed"
+              height={1200}
+              width={1200}
               objectFit="cover"
               sizes=""
               className="banner-img h-full lg:h-[90%] xl:h-[100%]"
@@ -129,7 +133,9 @@ function HeroSection() {
             <Image
               src="/image/cleanTech3.jpg"
               alt="img"
-              layout="fill"
+              layout="fixed"
+              height={1200}
+              width={1200}
               objectFit="cover"
               sizes=""
               className="banner-img h-full lg:h-[90%] xl:h-[100%]"
@@ -137,7 +143,9 @@ function HeroSection() {
             <Image
               src="/image/logo.png"
               alt="img"
-              layout="fill"
+              layout="fixed"
+              height={1200}
+              width={1200}
               sizes=""
               objectFit="cover"
               className="banner-img h-full lg:h-[90%] xl:h-[100%]"
