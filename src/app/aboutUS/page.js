@@ -35,8 +35,8 @@ export default function AboutUS() {
             value driven. We breathe, practice and propagate the following five
             core values{" "}
           </p>
-          <h1 class="mb-6 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-            <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 pl-5 pb-5">
+          <h1 class="mb-6 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl ">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 pl-5 pb-5 ">
               Customer Centric
             </span>{" "}
             Approach

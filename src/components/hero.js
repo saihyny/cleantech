@@ -4,7 +4,7 @@ import Image from "next/image";
 import NavBar from "./NavBar";
 function HeroSection() {
   return (
-    <div className="bo">
+    <div className="h-auto">
       <div className="navbar">
         <NavBar />
       </div>
@@ -24,7 +24,7 @@ function HeroSection() {
                 </span>
               </h1>
 
-              <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed lg:text-white text-black dark:text-white">
+              <p class="mx-auto mt-4 max-w-xl sm:/relaxed lg:text-white text-black dark:text-white">
                 Kshetra offers the products, components and services that are
                 specifically designed & manufactured as per the letest guidlines
                 of NABH and ISO standards{" "}
@@ -33,73 +33,74 @@ function HeroSection() {
               <div class="mt-8 flex flex-wrap justify-center gap-4">
                 <a
                   class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
-                  href="#"
+                  href="tel:+919701895005"
                 >
-                  Get Started
+                  call us
                 </a>
 
                 <a
                   class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-black hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto
                   dark:text-white"
-                  href="#"
+                  href="/contactUS"
                 >
-                  Learn More
+                  contact us
                 </a>
               </div>
             </div>
           </div>
         </section>
         <section class=" absolute md:mt-[80px]  text-dark w-full  ">
-          <div class="mx-auto max-w-3xl text-center  absolute px-auto ">
+          <div class="  mx-auto max-w-3xl text-center  absolute px-auto ">
             <h1
-              class="bg-blue-500 bg-clip-text  sm:text-4xl  text-2xl font-extrabold  text-transparent underline leading-none tracking-tight underline-offset-1 decoration-8 decoration-blue-200 dark:decoration-blue-600 
-            dark:text-white px-5 pb-10 "
+              class="bg-blue-500 bg-clip-text  sm:text-4xl  text-xl font-extrabold  text-transparent underline leading-none tracking-tight underline-offset-1 decoration-8 decoration-blue-200 dark:decoration-blue-600 
+            dark:text-white px-5 py-5 "
             >
               Accompaniments Details for the Elements
             </h1>
           </div>
-          <div class="mx-auto w-full text-black  m px-2 py-[85px]  rounded-md bg-white dark:bg-black grid grid-cols-1 lg:grid-cols-3  ">
-            <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-xl font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-4 px-2 pb-5 sm:text-sm border-solid dark:text-white ">
+          <div class="mx-auto w-full text-black px-2 pt-[85px]  rounded-md bg-white dark:bg-black grid grid-cols-5 lg:grid-cols-3 text-xl  ">
+            
+            <span class=" mb-4  font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-2 px-2 pb-5 text-xs border-solid dark:text-white ">
               Air Handling Units
             </span>
-            <span class="underline underline-offset-1 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-xl font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-4 px-2 pb-5 sm:text-sm border-solid dark:text-white ">
+            <span class=" mb-4  font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-2 px-2 pb-5 text-xs border-solid dark:text-white ">
               Ducting System
             </span>
-            <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-xl font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-4 px-2 pb-5 sm:text-sm border-solid dark:text-white ">
+            <span class=" mb-4  font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-2 px-2 pb-5 text-xs border-solid dark:text-white ">
               Laminar Flow Units (LAFU)
             </span>
-            <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-xl font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-4 px-2 pb-5 sm:text-sm border-solid dark:text-white ">
+            <span class=" mb-4  font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-2 px-2 pb-5 text-xs border-solid dark:text-white ">
               Modular Wall and Ceiling Panels
             </span>
-            <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-xl font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-4 px-2 pb-5 sm:text-sm border-solid dark:text-white ">
+            <span class=" mb-4  font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-2 px-2 pb-5 text-xs border-solid dark:text-white ">
               Hermatically sealed Doors and Windows
             </span>
-            <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-xl font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-4 px-2 pb-5 sm:text-sm border-solid dark:text-white ">
+            <span class=" mb-4  font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-2 px-2 pb-5 text-xs border-solid dark:text-white ">
               Pass Boxes
             </span>
-            <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-xl font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-4 px-2 pb-5 sm:text-sm border-solid dark:text-white ">
+            <span class=" mb-4  font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-2 px-2 pb-5 text-xs border-solid dark:text-white ">
               Surgical Scrub Sinks
             </span>
-            <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-xl font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-4 px-2 pb-5 sm:text-sm border-solid dark:text-white ">
+            <span class=" mb-4  font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-2 px-2 pb-5 text-xs border-solid dark:text-white ">
               Medical Gas Pipelines
             </span>
-            <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-xl font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-4 px-2 pb-5 sm:text-sm border-solid dark:text-white ">
+            <span class=" mb-4  font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-2 px-2 pb-5 text-xs border-solid dark:text-white ">
               Electrification with Dedicated Panel Box
             </span>
-            <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-xl font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-4 px-2 pb-5 sm:text-sm border-solid dark:text-white ">
+            <span class=" mb-4  font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-2 px-2 pb-5 text-xs border-solid dark:text-white ">
               Seamless Vinyl and Epoxy Floorings
             </span>
-            <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-xl font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-4 px-2 pb-5 sm:text-sm border-solid dark:text-white ">
+            <span class=" mb-4  font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-2 px-2 pb-5 text-xs border-solid dark:text-white ">
               Turnkey Solutions
             </span>
 
-            <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-xl font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-4 px-2 pb-5 sm:text-sm border-solid dark:text-white ">
+            <span class=" mb-4  font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-2 px-2 pb-5 text-xs border-solid dark:text-white ">
               Designing - Manufacturing - Installations
             </span>
-            <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-xl font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-4 px-2 pb-5 sm:text-sm border-solid dark:text-white ">
+            <span class=" mb-4  font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-2 px-2 pb-5 text-xs border-solid dark:text-white ">
               Validation & Documentation
             </span>
-            <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-xl font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-4 px-2 pb-5 sm:text-sm border-solid dark:text-white ">
+            <span class=" mb-4  font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-2 px-2  text-xs border-solid dark:text-white ">
               Service & AMC Facilities
             </span>
           </div>
