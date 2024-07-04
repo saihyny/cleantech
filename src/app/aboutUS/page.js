@@ -1,13 +1,13 @@
 import NavBar from "@/components/NavBar";
 import Image from "next/image";
 import Footer from "@/components/footer";
-export default function aboutUS() {
+export default function AboutUS() {
   return (
     <>
       <div className="absolute z-10">
       <NavBar />
       </div>     
-      <div className=" relative w-full h-[300px] z-1 ">
+      <div className=" relative w-full h-[50vh] z-1 ">
         <Image
           src="/image/values.jpg"
           objectFit="cover"
