@@ -1,41 +1,19 @@
+"use client";
 import ProductsNav from "@/components/NavBars/productsNav";
 import Image from "next/image";
 import Footer from "@/components/footer";
+import Carousel from "@/components/coursel";
 
 export default function ModularPartitions() {
+  const slides = ["/image/panel1.jpg", "/image/ot.jpg", "/image/ot3.jpg"];
+  const slides2 = ["/image/door1.jpg", "/image/door2.jpg", "/image/door3.jpg"];
   return (
     <>
       <ProductsNav />
-      <div className=" flex justify-center flex-col h-auto w-screen  border-solid border-5 border-y-black ">
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-3  ">
-          <Image
-            src='/image/panel1.jpg'
-            layout="fixed"
-            height={500}
-            width={900}
-            alt="mot"
-            objectFit="cover"
-            className="h-[500px] w-auto lg:w-[900px] rounded-lg"
-          />
-          <Image
-            src='/image/panel2.jpg'
-            alt="mot"
-            layout="fixed"
-            height={500}
-            width={900}
-            objectFit="cover"
-            className="h-[500px] w-[500px] rounded-lg"
-          />
-          <Image
-            src='/image/panel.jpg'
-            alt="mot"
-            layout="fixed"
-            height={500}
-            width={900}
-            objectFit="cover"
-            className="h-[500px] w-auto rounded-lg"
-          />
-        </div>
+  
+
+      <div className=" flex justify-center flex-col h-auto w-screen  border-solid border-5 border-y-black mt-[10vh]">
+     
         <div className="h-full">
           <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5  ">
             <span className="border-l-[10px] border-orange-600 border-solid pl-2">
@@ -54,35 +32,17 @@ export default function ModularPartitions() {
             surfaces of the panels. Our Panels highly durable and resistant
             against Moisture, Corrosion & Fungus.{" "}
           </p>
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-20 mt-10 ">
-          <Image
-            src='/image/door1.jpg'
-            alt="mot"
-            layout="fixed"
-            height={500}
-            width={900}
-            objectFit="cover"
-            className="h-[500px] w-auto  rounded-lg"
-          />
-          <Image
-            src='/image/door2.jpg'
-            alt="mot"
-            layout="fixed"
-            height={500}
-            width={900}
-            objectFit="cover"
-            className="h-[500px] w-[500px] rounded-lg"
-          />
-          <Image
-            src='/image/door3.jpg'
-            alt="mot"
-            layout="fixed"
-            height={500}
-            width={900}
-            objectFit="cover"
-            className="h-[500px] w-auto rounded-lg"
-          />
+          <div className="flex justify-center mt-2 bg-gradient-to-r from-green-400 via-blue-600 to-purple-600 relative  ">
+        <div className="w-[500px] rounded-lg shadow-xl ">
+          <Carousel>
+            {[
+              ...slides.map((img) => <img src={img} />),
+              <video src="/image/ot2.mp4" autoPlay muted loop />,
+            ]}
+          </Carousel>
         </div>
+      </div>
+        
           <div className="h-full">
             <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5 ">
               <span className="border-l-[10px] border-orange-600 border-solid pl-2">
@@ -109,6 +69,16 @@ export default function ModularPartitions() {
               <li>Single Leaf Sliding & Automatic Doors</li>
               <li>Fire Proof Doors</li>
             </ul>
+          </div>
+          <div className="flex justify-center mt-2 bg-gradient-to-r from-green-400 via-blue-600 to-purple-600 relative z-0 ">
+            <div className="w-[500px]  rounded-lg shadow-xl  ">
+              <Carousel>
+                {[
+                  ...slides2.map((img) => <img src={img} />),
+                  <video src="/image/door5.mp4" autoPlay muted loop />,
+                ]}
+              </Carousel>
+            </div>
           </div>
         </div>
       </div>

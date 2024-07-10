@@ -49,16 +49,16 @@ function HeroSection() {
             </div>
           </div>
         </section>
-        <section class=" absolute md:mt-[80px]  text-dark w-full  ">
+        <section class=" absolute md:mt-[80px] mt-3 text-dark w-full    ">
           <div class="  mx-auto max-w-3xl text-center  absolute px-auto ">
             <h1
-              class="bg-blue-500 bg-clip-text  sm:text-4xl  text-xl font-extrabold  text-transparent underline leading-none tracking-tight underline-offset-1 decoration-8 decoration-blue-200 dark:decoration-blue-600 
+              class="bg-blue-800 bg-clip-text  sm:text-4xl  text-xl font-extrabold  text-transparent underline leading-none tracking-tight underline-offset-1 decoration-8 decoration-blue-200 dark:decoration-blue-600 
             dark:text-white px-5 py-5 "
             >
               Accompaniments Details for the Elements
             </h1>
           </div>
-          <div class="mx-auto w-full text-black px-2 pt-[85px]  rounded-md bg-white dark:bg-black grid grid-cols-5 lg:grid-cols-3 text-xl  ">
+          <div class="mx-auto w-full text-black px-2 pt-[85px]  rounded-md bg-gradient-to-tl from-lime-200 via-sky-500 to-violet-500  dark:bg-black grid grid-cols-5 lg:grid-cols-3 text-xl  ">
             
             <span class=" mb-4  font-bold leading-none tracking-tight text-black md:text-2xl lg:text-2xl border-l-2 px-2 pb-5 text-xs border-solid dark:text-white ">
               Air Handling Units
@@ -108,8 +108,8 @@ function HeroSection() {
       </div>
 
       <div className="banner ">
-        <div className="bg-white md:hidden "></div>
-        <div className="hidden md:block  ">
+        <div className="bg-gradient-to-tl from-lime-200 via-sky-500 to-violet-500  md:hidden "></div>
+        <div className="hidden md:block   ">
           <div className=" ">
             <Image
               src="/image/cleanTech.jpg"

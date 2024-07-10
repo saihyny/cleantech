@@ -6,7 +6,7 @@ export default function CleanRoomEquipments() {
   return (
     <>
       <ProductsNav />
-      <div className=" md:flex ">
+      <div className=" md:flex  ">
         <Image
           src='/image/passbox.jpg'
           alt="mot"
@@ -14,7 +14,7 @@ export default function CleanRoomEquipments() {
           height={500}
           width={500}
           objectFit="cover"
-          className="h-[500px] w-[500px] rounded-lg"
+          className=" rounded-lg h-[300px] md:h-[400px] mt-[10vh]"
         />
         <div className="flex-1 items-center justify-center md:mt-20">
           <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5  ">
@@ -39,7 +39,7 @@ export default function CleanRoomEquipments() {
           height={400}
           width={500}
           objectFit="cover"
-          className="h-[400px] w-[500px] rounded-lg"
+          className=" h-[300px] md:h-[400px] rounded-lg"
         />
         <div className="flex-1 items-center justify-center md:mt-5">
           <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5  ">
@@ -59,13 +59,13 @@ export default function CleanRoomEquipments() {
       <div className=" md:flex  mt-3">
       
         <Image
-          src='/image/pvc.jpg'
+          src='/image/efoxy.jpg'
           alt="mot"
           layout="fixed"
           height={400}
           width={500}
           objectFit="cover"
-          className="h-[400px] w-[500px] rounded-lg"
+          className=" rounded-lg h-[300px] md:h-[400px]"
         />
         <div className="flex-1 items-center justify-center md:mt-5">
           <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5  ">

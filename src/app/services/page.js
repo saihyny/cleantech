@@ -28,7 +28,7 @@ export default function Services() {
              rounded-md
             hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
           >
-            Complete MOT Complex
+            Complete OT Complex
           </Link>
         </div>
         <div className=" rounded-md  bg-orange-400 shadow-2xl ">
@@ -77,7 +77,7 @@ export default function Services() {
       <div className="grid  md:grid-cols-3 grid-cols-1  rounded-md w-auto h-auto gap-2  ">
         <div className=" text-center rounded-md  bg-orange-400 shadow-2xl ">
           <Image
-            src='/image/panel1.jpg'
+            src='/image/ot.jpg'
             alt="mot"
             layout="fixed"
             height={200}

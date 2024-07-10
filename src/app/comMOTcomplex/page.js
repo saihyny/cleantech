@@ -1,32 +1,14 @@
 "use-client";
 import ServiceNav from "@/components/NavBars/serviceNav";
-import Image from "next/image";
+import Carousel from "@/components/coursel";
 import Footer from "@/components/footer";
 export default function ComMotComplex() {
+  const slides = ['/image/MOT.png', '/image/MotComplex.jpg'];
   return (
     <>
       <ServiceNav />
-      <div className=" flex justify-center flex-col h-auto w-screen  border-solid border-5 border-y-black ">
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-1  ">
-          <Image
-            src='/image/MOT.png'
-            alt="mot"
-            layout="fixed"
-            width={900}
-            height={500}
-            objectFit="cover"
-            className="h-[500px] w-auto lg:w-[900px] rounded-lg"
-          />
-          <Image
-            src='/image/MotComplex.jpg'
-            alt="mot"
-            layout="fixed"
-            width={900}
-            height={500}
-            objectFit="cover"
-            className="h-[500px] w-auto rounded-lg"
-          />
-        </div>
+      <div className=" flex justify-center flex-col h-auto w-screen  border-solid border-5 border-y-black pt-[10vh] ">
+       
         <div className="h-full">
           <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5  ">
             <span className="border-l-[10px] border-orange-600 border-solid pl-2">
@@ -49,6 +31,15 @@ export default function ComMotComplex() {
             number of Doctors & Staff involved at the time of Surgery carried
             along with the Equipment that are used.{" "}
           </p>
+          <div className="flex justify-center mt-2 bg-gradient-to-r from-green-400 via-blue-600 to-purple-600 relative  ">
+        <div className="w-[500px] rounded-lg shadow-xl ">
+          <Carousel>
+            {[
+              ...slides.map((img) => <img src={img} />),
+            ]}
+          </Carousel>
+        </div>
+      </div>
           <div className="h-full">
             <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5 ">
               <span className="border-l-[10px] border-orange-600 border-solid pl-2">

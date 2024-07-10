@@ -14,7 +14,7 @@ export default function ServiceNav() {
     setCollapce(!isCollapce);
   };
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 z-11 backdrop-filter backdrop-blur-lg bg-opacity-40 w-full ">
+    <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 z-11 backdrop-filter backdrop-blur-lg bg-opacity-40 w-full overflow-hidden ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 ">
         <Link
           href="/"
@@ -90,7 +90,7 @@ export default function ServiceNav() {
                     : ""
                 }block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
               >
-                CompleteMotComplex
+                CompleteOTComplex
               </Link>
             </li>
             <li>

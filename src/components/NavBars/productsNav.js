@@ -14,7 +14,7 @@ export default function ProductsNav() {
     setCollapce(!isCollapce);
   };
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 z-11 backdrop-filter backdrop-blur-lg bg-opacity-40 w-full ">
+    <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 z-11 backdrop-filter backdrop-blur-lg bg-opacity-40 w-full  ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 ">
         <Link
           href="/"

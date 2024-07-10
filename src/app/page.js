@@ -3,12 +3,13 @@ import Services from "./services/page";
 import Products from "./products/page";
 import Motives from "@/components/motives";
 import Footer from "@/components/footer";
-import Link from "next/link";
+
 
 export default function Home() {
+ 
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col ">
         <HeroSection />
         <link
           rel="stylesheet"
@@ -26,6 +27,7 @@ export default function Home() {
           <Motives />
           <Services />
           <Footer />
+  
         </div>
       </div>
     </>

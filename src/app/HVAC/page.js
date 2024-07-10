@@ -1,12 +1,14 @@
 import ProductsNav from "@/components/NavBars/productsNav";
 import Image from "next/image";
+import Carousel from "@/components/coursel";
 import Footer from "@/components/footer";
 export default function HVAC() {
+  const slides = ['/image/hvac.png', '/image/ducting.jpg'];
   return (
     <>
       <ProductsNav />
       <div className=" flex justify-center flex-col h-auto w-screen  border-solid border-5 border-y-black md:mt-20 mt-40 ">
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-1  ">
+        {/* <div className="grid md:grid-cols-2 grid-cols-1 gap-1  ">
           <Image
             src='/image/hvac.png'
             alt="mot"
@@ -25,7 +27,7 @@ export default function HVAC() {
             objectFit="cover"
             className="h-[400px] w-auto lg:w-full rounded-lg"
           />
-        </div>
+        </div> */}
         <div className="h-full">
           <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5  ">
             <span className="border-l-[10px] border-orange-600 border-solid pl-2">
@@ -70,6 +72,15 @@ export default function HVAC() {
               <li>Re-circulation AHUs</li>
             </ul>
           </div>
+          <div className="flex justify-center mt-2 bg-gradient-to-r from-green-400 via-blue-600 to-purple-600 relative  ">
+        <div className="w-[500px] rounded-lg shadow-xl ">
+          <Carousel>
+            {[
+              ...slides.map((img) => <img src={img} />)
+            ]}
+          </Carousel>
+        </div>
+      </div>
         </div>
       </div>
       <Footer />

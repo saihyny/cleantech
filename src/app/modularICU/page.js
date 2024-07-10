@@ -1,31 +1,13 @@
 import ServiceNav from "@/components/NavBars/serviceNav";
-import Image from "next/image";
+import Carousel from "@/components/coursel";
 import Footer from "@/components/footer";
 export default function ModularICU() {
+  const slides = ['/image/icu.png', '/image/icu2.jpg'];
   return (
     <>
       <ServiceNav />
-      <div className=" flex justify-center flex-col h-auto w-screen  border-solid border-5 border-y-black ">
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-1  ">
-          <Image
-            src='/image/icu.png'
-            alt="mot"
-            layout="fixed"
-            height={500}
-            width={900}
-            objectFit="cover"
-            className="h-[500px] w-auto lg:w-[900px] rounded-lg"
-          />
-          <Image
-            src='/image/icu2.jpg'
-            alt="mot"
-            layout="fixed"
-            height={500}
-            width={900}
-            objectFit="cover"
-            className="h-[500px] w-auto rounded-lg"
-          />
-        </div>
+      <div className=" flex justify-center flex-col h-auto w-screen  border-solid border-5 border-y-black mt-[10vh] ">
+       
         <div className="h-full">
           <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5  ">
             <span className="border-l-[10px] border-orange-600 border-solid pl-2">
@@ -46,6 +28,15 @@ export default function ModularICU() {
             out-flows through the Ducts is automatically controlled by AHU which
             is placed outside the premises.{" "}
           </p>
+          <div className="flex justify-center mt-2 bg-gradient-to-r from-green-400 via-blue-600 to-purple-600 relative  ">
+        <div className="w-[500px] rounded-lg shadow-xl ">
+          <Carousel>
+            {[
+              ...slides.map((img) => <img src={img} />),
+            ]}
+          </Carousel>
+        </div>
+      </div>
           <div className="h-full">
             <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5 ">
               <span className="border-l-[10px] border-orange-600 border-solid pl-2">
