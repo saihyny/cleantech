@@ -10,7 +10,7 @@ function HeroSection() {
       </div>
       <div className="banner-text  ">
         <section class="flex justify-center items-center   text-white sm:[mt-500px] ">
-          <div class="mx-auto lg:mt-[200px] md:mb-[100] sm:mt-[100px] border-solid border-2 max-w-screen-xl px-2 py-10 lg:flex  lg:h-[70vh] lg:items-center rounded-md backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-2xl ">
+          <div class="mx-auto lg:mt-[200px] md:mb-[100] sm:mt-[100px]  border-solid border-2 max-w-screen-xl px-2 py-10 lg:flex  lg:h-[70vh] lg:items-center rounded-md backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-2xl ">
             <div class="mx-auto max-w-3xl text-center">
               <h1 class="bg-gradient-to-r from-green-300 via-blue-200 to-purple-600 bg-clip-text text-2xl font-extrabold t text-transparent ">
                 offering MOTs that carries...
