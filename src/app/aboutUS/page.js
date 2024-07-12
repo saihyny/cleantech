@@ -12,6 +12,7 @@ export default function AboutUS() {
           src="/image/values.jpg"
           objectFit="cover"
           layout="fill"
+          alt="about images"
           className="h-auto w-auto top-0"
         />
       </div>
@@ -22,6 +23,7 @@ export default function AboutUS() {
           layout="fixed"
           width={500}
           height={900}
+          alt="about image"
           className=" hidden xl:block xl:h-[900px] xl:w-[500px]   ml-10 rounded-sm "
         />
         <div>

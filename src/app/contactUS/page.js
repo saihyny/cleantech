@@ -11,6 +11,7 @@ export default function contactUS() {
 
       <div className="relative w-full h-[300px]">
         <Image
+          alt="image"
           src="/image/contact.jpg"
           layout="fill"
           objectFit="cover"

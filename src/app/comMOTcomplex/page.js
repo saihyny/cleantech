@@ -35,7 +35,7 @@ export default function ComMotComplex() {
         <div className="w-[500px] rounded-lg shadow-xl ">
           <Carousel>
             {[
-              ...slides.map((img) => <img src={img} key={Math.random()} alt='images' />),
+              ...slides.map((img,index) => <img src={img} key={index} alt='images' />),
             ]}
           </Carousel>
         </div>
