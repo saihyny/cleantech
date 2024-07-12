@@ -76,7 +76,7 @@ export default function HVAC() {
         <div className="w-[500px] rounded-lg shadow-xl ">
           <Carousel>
             {[
-              ...slides.map((img) => <img src={img} />)
+              ...slides.map((img) => <img src={img}key={Math.random()} />)
             ]}
           </Carousel>
         </div>
