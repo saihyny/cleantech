@@ -27,7 +27,7 @@ export default function IVFlabs() {
           </p>
           <div className="flex justify-center mt-2 bg-gradient-to-r from-green-400 via-blue-600 to-purple-600 relative  ">
             <div className="w-[500px] rounded-lg shadow-xl ">
-              <Carousel>{[...slides.map((img) => <img src={img} key={Math.random()} />)]}</Carousel>
+              <Carousel>{[...slides.map((img) => <img src={img} key={Math.random()} alt="images" />)]}</Carousel>
             </div>
           </div>
         </div>

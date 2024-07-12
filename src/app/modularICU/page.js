@@ -32,7 +32,7 @@ export default function ModularICU() {
         <div className="w-[500px] rounded-lg shadow-xl ">
           <Carousel>
             {[
-              ...slides.map((img) => <img src={img} key={Math.random()} />),
+              ...slides.map((img) => <img src={img} key={Math.random()} alt="images" />),
             ]}
           </Carousel>
         </div>

@@ -36,7 +36,7 @@ export default function ModularPartitions() {
         <div className="w-[500px] rounded-lg shadow-xl ">
           <Carousel>
             {[
-              ...slides.map((img) => <img src={img} key={Math.random()} />),
+              ...slides.map((img) => <img src={img} key={Math.random()} alt="images" />),
               <video src="/image/ot2.mp4" autoPlay muted loop />,
             ]}
           </Carousel>
@@ -74,7 +74,7 @@ export default function ModularPartitions() {
             <div className="w-[500px]  rounded-lg shadow-xl  ">
               <Carousel>
                 {[
-                  ...slides2.map((img) => <img src={img} />),
+                  ...slides2.map((img) => <img src={img} key={Math.random()} alt="images"  />),
                   <video src="/image/door5.mp4" autoPlay muted loop />,
                 ]}
               </Carousel>

@@ -8,26 +8,7 @@ export default function HVAC() {
     <>
       <ProductsNav />
       <div className=" flex justify-center flex-col h-auto w-screen  border-solid border-5 border-y-black md:mt-20 mt-40 ">
-        {/* <div className="grid md:grid-cols-2 grid-cols-1 gap-1  ">
-          <Image
-            src='/image/hvac.png'
-            alt="mot"
-            layout="fixed"
-            width={900}
-            height={400}
-            objectFit="cover"
-            className="h-[400px] w-auto lg:w-full rounded-lg"
-          />
-          <Image
-            src='/image/ducting.jpg'
-            alt="mot"
-            layout="fixed"
-            width={900}
-            height={400}
-            objectFit="cover"
-            className="h-[400px] w-auto lg:w-full rounded-lg"
-          />
-        </div> */}
+  
         <div className="h-full">
           <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5  ">
             <span className="border-l-[10px] border-orange-600 border-solid pl-2">
@@ -76,7 +57,7 @@ export default function HVAC() {
         <div className="w-[500px] rounded-lg shadow-xl ">
           <Carousel>
             {[
-              ...slides.map((img) => <img src={img}key={Math.random()} />)
+              ...slides.map((img) => <img src={img}key={Math.random()} alt="images" />)
             ]}
           </Carousel>
         </div>
