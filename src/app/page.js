@@ -23,7 +23,7 @@ export default function Home() {
             <i class="fa fa-whatsapp my-float"></i>
           </a>
         
-        <div className="pt-[100px] xl:pt-[420px] md:pt-[220px] ">
+        <div className="pt-[300px] s:pt-[70px]   xl:pt-[420px] md:pt-[420px] ">
           <Motives />
           <Services />
           <Footer />

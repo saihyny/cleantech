@@ -1,9 +1,9 @@
 export default function Motives() {
   return (
-    <div className="hero-section   items-center xl:min-h-[450px] md:min-h-[650px] ">
+    <div className="hero-section    items-center xl:min-h-[450px] md:min-h-[650px] ">
       <h2 className="font-serif font-extrabold  p-10  text-red-400 shadow-2xl backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-lg ">
         Kshetra Clean Tech
-        <span className="text-lg font-extralight  text-white font-serif rounded-md ">
+        <span className="text-base md:text-lg font-extralight  text-white font-serif rounded-md ">
           {" "}
           is a professionally driven company in manufacturing Efficient Modular
           Operation Theatres. We offer customised MOTs designing as per the site
