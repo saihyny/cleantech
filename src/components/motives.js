@@ -3,7 +3,7 @@ export default function Motives() {
     <div className="hero-section    items-center xl:min-h-[450px] md:min-h-[650px] ">
       <h2 className="font-serif font-extrabold  p-10  text-red-400 shadow-2xl backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-lg ">
         Kshetra Clean Tech
-        <span className="text-base md:text-lg font-extralight  text-white font-serif rounded-md ">
+        <span className="text-base md:text-lg font-extralight  text-black dark:text-white font-serif rounded-md ">
           {" "}
           is a professionally driven company in manufacturing Efficient Modular
           Operation Theatres. We offer customised MOTs designing as per the site
@@ -18,8 +18,8 @@ export default function Motives() {
         </span>
       </h2>
       <div className="hidden sm:grid  lg:grid-cols-2 sm:grid-cols-1 items-center w-full h-[220px] backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-lg  ">
-        <div className=" border-2 border-solid rounded-lg m-1 bg-slate-300 h-auto w-auto  shadow-2xl ">
-          <h1 class="text-3xl font-extrabold sm:text-5xl text-slate-600 ">
+        <div className=" border-2 border-solid rounded-lg m-1 bg-slate-300 h-auto w-auto  shadow-2xl  dark:text-black ">
+          <h1 class="text-3xl font-extrabold sm:text-5xl font-serif ">
             OUR MISSION
             <strong class="font-bold text-xl text-red-700 sm:block">
               {" "}
@@ -30,16 +30,15 @@ export default function Motives() {
             </strong>
           </h1>
         </div>
-        <div className="bg-slate-300 h-auto w-auto border-2 border-solid rounded-lg m-1  shadow-2xl ">
-          <h1 class="text-3xl font-extrabold sm:text-5xl text-slate-600">
+        <div className="bg-slate-300 h-auto w-auto border-2 border-solid rounded-lg m-1  shadow-2xl  dark:text-black ">
+          <h1 class="text-3xl font-extrabold sm:text-5xl  font-serif">
             OUR VISION
             <strong class="font-bold text-xl text-red-700 sm:block">
               {" "}
               Our commitment is to be the partner of choice for vendors and the
               trusted source for customers.{""}To become one of the best Vendor
               and Customer’s delight by offering unmatchable quality products
-              that lasts long. Unmatched quality. Lasting value. Delighted
-              customers.
+              that lasts long.
             </strong>
           </h1>
         </div>

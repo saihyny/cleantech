@@ -7,7 +7,7 @@ export default function Carousel({
   autoSlideInterval = 3000,
 }) {
   const [curr, setCurr] = useState(0);
-  const [autoSlide, setAutoSlide] = useState(true); // Use state to control autoSlide
+  const [autoSlide, setAutoSlide] = useState(false); // Use state to control autoSlide
 
   const prev = () =>
     setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1));

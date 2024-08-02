@@ -10,15 +10,13 @@ export default function ModularPartitions() {
   return (
     <>
       <ProductsNav />
-  
 
       <div className=" flex justify-center flex-col h-auto w-screen  border-solid border-5 border-y-black mt-[10vh]">
-     
         <div className="h-full">
           <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5  ">
             <span className="border-l-[10px] border-orange-600 border-solid pl-2">
               {" "}
-              Modular Walls & Ceiling Panels
+              Modular Partions
             </span>
           </h2>
           <p className="text-lg px-7 text-black dark:text-orange-300  ">
@@ -32,17 +30,63 @@ export default function ModularPartitions() {
             surfaces of the panels. Our Panels highly durable and resistant
             against Moisture, Corrosion & Fungus.{" "}
           </p>
-          <div className="flex justify-center mt-2 bg-gradient-to-r from-green-400 via-blue-600 to-purple-600 relative  ">
-        <div className="w-[500px] rounded-lg shadow-xl ">
-          <Carousel>
-            {[
-              ...slides.map((img,index) => <img src={img} key={index} alt="images" />),
-              <video src="/image/ot2.mp4" autoPlay muted loop />,
-            ]}
-          </Carousel>
-        </div>
-      </div>
-        
+          <div className="flex sm:justify-around mt-2 sm:flex-row flex-col bg-gradient-to-r from-green-400 via-blue-600 to-purple-600  relative ">
+            <div className="w-[450px] rounded-lg shadow-xl  ">
+              <Carousel>
+                {[
+                  ...slides.map((img, index) => (
+                    <img src={img} key={index} alt="images" />
+                  )),
+                  <video src="/image/ot2.mp4" autoPlay muted loop />,
+                ]}
+              </Carousel>
+              <div className="relative">
+                <h2 className="text-lg font-extrabold xl:text-xl md:text-lg text-orange-600 text-center p-2 ">
+                  <span className="border-l-[10px] border-orange-600 border-solid pl-1">
+                    {" "}
+                    CleanRooms
+                  </span>
+                </h2>
+              </div>
+            </div>
+            <div className="w-[450px] rounded-lg shadow-xl  ">
+              <Carousel>
+                {[
+                  ...slides.map((img, index) => (
+                    <img src={img} key={index} alt="images" />
+                  )),
+                  <video src="/image/ot2.mp4" autoPlay muted loop />,
+                ]}
+              </Carousel>
+              <div className="relative">
+                <h2 className="text-xl font-extrabold sm:text-xl text-orange-600 text-center p-2 ">
+                  <span className="border-l-[10px] border-orange-600 border-solid pl-1">
+                    {" "}
+                    CleanRoom Materials
+                  </span>
+                </h2>
+              </div>
+            </div>
+            <div className="w-[450px] rounded-lg shadow-xl   ">
+              <Carousel>
+                {[
+                  ...slides.map((img, index) => (
+                    <img src={img} key={index} alt="images" />
+                  )),
+                  <video src="/image/ot2.mp4" autoPlay muted loop />,
+                ]}
+              </Carousel>
+              <div className="relative">
+                <h2 className="text-xl font-extrabold sm:text-xl text-orange-600 text-center p-2 ">
+                  <span className="border-l-[10px] border-orange-600 border-solid pl-1">
+                    {" "}
+                    CleanRoom Panels
+                  </span>
+                </h2>
+              </div>
+            </div>
+          </div>
+
           <div className="h-full">
             <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5 ">
               <span className="border-l-[10px] border-orange-600 border-solid pl-2">
@@ -70,16 +114,63 @@ export default function ModularPartitions() {
               <li>Fire Proof Doors</li>
             </ul>
           </div>
-          <div className="flex justify-center mt-2 bg-gradient-to-r from-green-400 via-blue-600 to-purple-600 relative z-0 ">
-            <div className="w-[500px]  rounded-lg shadow-xl  ">
+          <div className="flex sm:justify-around mt-2 sm:flex-row flex-col bg-gradient-to-r from-green-400 via-blue-600 to-purple-600  relative ">
+            <div className="w-[450px]  rounded-lg shadow-xl  ">
               <Carousel>
                 {[
-                  ...slides2.map((img,index) => <img src={img} key={index} alt="images"  />),
+                  ...slides2.map((img, index) => (
+                    <img src={img} key={index} alt="images" />
+                  )),
                   <video src="/image/door5.mp4" autoPlay muted loop />,
                 ]}
               </Carousel>
+              <div className="relative">
+              <h2 className="text-xl font-extrabold sm:text-xl text-orange-600 text-center p-2 ">
+                <span className="border-l-[10px] border-orange-600 border-solid pl-1">
+                  {" "}
+                  CleanRoom Materials
+                </span>
+              </h2>
+            </div>
+            </div>
+            <div className="w-[450px] rounded-lg shadow-xl  ">
+            <Carousel>
+              {[
+                ...slides.map((img, index) => (
+                  <img src={img} key={index} alt="images" />
+                )),
+                <video src="/image/ot2.mp4" autoPlay muted loop />,
+              ]}
+            </Carousel>
+            <div className="relative">
+              <h2 className="text-xl font-extrabold sm:text-xl text-orange-600 text-center p-2 ">
+                <span className="border-l-[10px] border-orange-600 border-solid pl-1">
+                  {" "}
+                  CleanRoom Materials
+                </span>
+              </h2>
             </div>
           </div>
+          <div className="w-[450px] rounded-lg shadow-xl  ">
+            <Carousel>
+              {[
+                ...slides.map((img, index) => (
+                  <img src={img} key={index} alt="images" />
+                )),
+                <video src="/image/ot2.mp4" autoPlay muted loop />,
+              ]}
+            </Carousel>
+            <div className="relative">
+              <h2 className="text-xl font-extrabold sm:text-xl text-orange-600 text-center p-2 ">
+                <span className="border-l-[10px] border-orange-600 border-solid pl-1">
+                  {" "}
+                  CleanRoom Materials
+                </span>
+              </h2>
+            </div>
+          </div>
+          </div>
+         
         </div>
       </div>
       <Footer />

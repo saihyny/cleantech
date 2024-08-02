@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Services() {
   return (
-    <div className="h-auto w-screen bg-transparent  mb-10">
+    <div className="h-auto w-screen bg-transparent  mb-10 ">
       <div className=" flex  justify-center  items-start">
         <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5  ">
           <span className="border-l-[10px] border-orange-600 border-solid pl-2">
@@ -12,15 +12,15 @@ export default function Services() {
         </h2>
       </div>
       <div className="grid  md:grid-cols-3 grid-cols-1  rounded-md w-auto h-auto gap-2  ">
-        <div className=" text-center rounded-md bg-orange-400 shadow-2xl">
+        <div className=" text-center rounded-md bg-orange-400 shadow-2xl overflow-hidden">
           <Image
-            src='/image/MOT.png'
+            src="/image/MOT.png"
             alt="mot"
             layout="fixed"
             height={200}
             width={600}
             objectFit="cover"
-            className="h-[200px] w-full rounded-lg"
+            className="h-[200px] w-full rounded-lg transition-transform duration-300 transform hover:scale-110"
           />
           <Link
             href="/comMOTcomplex"
@@ -31,15 +31,15 @@ export default function Services() {
             Complete OT Complex
           </Link>
         </div>
-        <div className=" rounded-md  bg-orange-400 shadow-2xl ">
+        <div className=" rounded-md  bg-orange-400 shadow-2xl overflow-hidden">
           <Image
-            src='/image/icu.png'
+            src="/image/icu.png"
             alt="mot"
             layout="fixed"
             height={200}
             width={600}
             objectFit="cover"
-            className="h-[200px] w-full rounded-lg"
+            className="h-[200px] w-full rounded-lg transition-transform duration-300 transform hover:scale-110"
           />
           <Link
             href="/modularICU"
@@ -48,15 +48,15 @@ export default function Services() {
             Modualar ICU,NICU,MICU & Isolation Rooms
           </Link>
         </div>
-        <div className=" rounded-md  bg-orange-400 shadow-2xl">
+        <div className=" rounded-md  bg-orange-400 shadow-2xl overflow-hidden">
           <Image
-            src='/image/ivf2.jpg'
+            src="/image/ivf2.jpg"
             alt="mot"
             layout="fixed"
             height={200}
             width={600}
             objectFit="cover"
-            className="h-[200px] w-full rounded-lg"
+            className="h-[200px] w-full rounded-lg transition-transform duration-300 transform hover:scale-110"
           />
           <Link
             href="/ivfLabs"
@@ -75,15 +75,15 @@ export default function Services() {
         </h2>
       </div>
       <div className="grid  md:grid-cols-3 grid-cols-1  rounded-md w-auto h-auto gap-2  ">
-        <div className=" text-center rounded-md  bg-orange-400 shadow-2xl ">
+        <div className=" text-center rounded-md  bg-orange-400 shadow-2xl overflow-hidden">
           <Image
-            src='/image/ot.jpg'
+            src="/image/ot.jpg"
             alt="mot"
             layout="fixed"
             height={200}
             width={600}
             objectFit="cover"
-            className="h-[200px] w-full rounded-lg"
+            className="h-[200px] w-full rounded-lg transition-transform duration-300 transform hover:scale-110"
           />
           <Link
             href="/modularPartitions"
@@ -92,15 +92,15 @@ export default function Services() {
             Modualar Partions
           </Link>
         </div>
-        <div className="text-center rounded-md  bg-orange-400 shadow-2xl ">
+        <div className="text-center rounded-md  bg-orange-400 shadow-2xl overflow-hidden ">
           <Image
-            src='/image/passbox.jpg'
+            src="/image/passbox.jpg"
             alt="mot"
             layout="fixed"
             height={200}
             width={600}
             objectFit="cover"
-            className="h-[200px] w-full rounded-lg"
+            className="h-[200px] w-full rounded-lg transition-transform duration-300 transform hover:scale-110"
           />
           <Link
             href="/CleanRoomEquipments"
@@ -109,15 +109,15 @@ export default function Services() {
             CleanRoom Equipments
           </Link>
         </div>
-        <div className=" rounded-md  bg-orange-400 shadow-2xl">
+        <div className=" rounded-md  bg-orange-400 shadow-2xl overflow-hidden ">
           <Image
-            src='/image/hvac.png'
+            src="/image/hvac.png"
             alt="mot"
             layout="fixed"
             height={200}
             width={600}
             objectFit="cover"
-            className="h-[200px] w-full rounded-lg"
+            className="h-[200px] w-full rounded-lg transition-transform duration-300 transform hover:scale-110"
           />
           <Link
             href="/HVAC"
