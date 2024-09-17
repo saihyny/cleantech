@@ -24,40 +24,6 @@ export default function Services() {
   };
 
   return (
-    // <div classNameName="h-auto w-screen bg-transparent  mb-10 bg-gradient-to-r from-blue-800 to-black ">
-
-    //   <div className=" flex  justify-center  items-start">
-    //     <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5  ">
-    //       <span className="border-l-[10px] border-orange-600 border-solid pl-2">
-    //         {" "}
-    //         OUR PRODUCTS
-    //       </span>
-    //     </h2>
-    //   </div>
-
-    //   {/* <div className="grid  md:grid-cols-3 grid-cols-1  rounded-md w-auto h-auto gap-2  ">
-    //     <div className=" text-center rounded-md  bg-orange-400 shadow-2xl overflow-hidden">
-    //
-
-    //     <div className=" rounded-md  bg-orange-400 shadow-2xl overflow-hidden ">
-    //       <Image
-    //         src="/image/hvac.png"
-    //         alt="mot"
-    //         layout="fixed"
-    //         height={200}
-    //         width={600}
-    //         objectFit="cover"
-    //         className="h-[200px] w-full rounded-lg transition-transform duration-300 transform hover:scale-110"
-    //       />
-    //       <Link
-    //         href="/HVAC"
-    //         className="block px-4 py-2 hover:bg-gray-100 text-center dark:hover:bg-gray-600 dark:hover:text-white"
-    //       >
-    //         HVAC
-    //       </Link>
-    //     </div>
-    //   </div> */}
-    // </div>
     <section className=" mx-auto p-10 md:py-12 px-0 md:p-8 md:px-0  bg-transparent  bg-gradient-to-r from-blue-800 to-black">
       <div className=" flex  justify-center  items-start">
         <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5  ">
@@ -67,7 +33,9 @@ export default function Services() {
           </span>
         </h2>
       </div>
-      <section className="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-10 items-start text-black ">
+      <section className="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-10 items-start text-black "
+      >
+
         <section
           className="p-5 py-10 bg-purple-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md"
           onClick={motRouter}
@@ -130,7 +98,10 @@ export default function Services() {
             Flooring, and controlled HVAC system.
           </p>
         </section>
+
       </section>
+
+
       <div className=" flex  justify-center  items-start">
         <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5  ">
           <span className="border-l-[10px] border-orange-600 border-solid pl-2">
@@ -140,6 +111,7 @@ export default function Services() {
         </h2>
       </div>
       <section className="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-10 items-start text-black ">
+
         <section
           className="p-5 py-10 bg-purple-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md"
           onClick={modularPartitions}
@@ -203,6 +175,7 @@ export default function Services() {
             Aluminum and Polyester.
           </p>
         </section>
+
       </section>
     </section>
   );
