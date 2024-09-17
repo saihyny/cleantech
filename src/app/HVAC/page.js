@@ -53,7 +53,7 @@ export default function HVAC() {
               <li>Re-circulation AHUs</li>
             </ul>
           </div>
-          <div className="flex justify-center mt-2 bg-gradient-to-r from-green-400 via-blue-600 to-purple-600 relative  ">
+          <div className="flex justify-center mt-2 bg-gradient-to-r from-blue-800 to-black relative  ">
         <div className="w-[500px] rounded-lg shadow-xl ">
           <Carousel>
             {[
@@ -64,6 +64,7 @@ export default function HVAC() {
       </div>
         </div>
       </div>
+      
       <Footer />
     </>
   );

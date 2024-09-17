@@ -31,7 +31,7 @@ export default function ComMotComplex() {
             number of Doctors & Staff involved at the time of Surgery carried
             along with the Equipment that are used.{" "}
           </p>
-          <div className="flex justify-center mt-2 bg-gradient-to-r from-green-400 via-blue-600 to-purple-600 relative  ">
+          <div className="flex justify-center mt-2 bg-gradient-to-r from-blue-800 to-black relative  ">
         <div className="w-[500px] rounded-lg shadow-xl ">
           <Carousel>
             {[

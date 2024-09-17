@@ -3,6 +3,7 @@ import ProductsNav from "@/components/NavBars/productsNav";
 import Image from "next/image";
 import Footer from "@/components/footer";
 import Carousel from "@/components/coursel";
+import Model from "@/components/model";
 
 export default function ModularPartitions() {
   const slides = ["/image/panel1.jpg", "/image/ot.jpg", "/image/ot3.jpg"];
@@ -10,7 +11,7 @@ export default function ModularPartitions() {
   return (
     <>
       <ProductsNav />
-
+      <Model/>
       <div className=" flex justify-center flex-col h-auto w-screen  border-solid border-5 border-y-black mt-[10vh]">
         <div className="h-full">
           <h2 className="text-3xl font-extrabold sm:text-5xl text-orange-600 text-center p-5  ">
@@ -30,7 +31,7 @@ export default function ModularPartitions() {
             surfaces of the panels. Our Panels highly durable and resistant
             against Moisture, Corrosion & Fungus.{" "}
           </p>
-          <div className="flex sm:justify-around mt-2 sm:flex-row flex-col bg-gradient-to-r from-green-400 via-blue-600 to-purple-600  relative ">
+          <div className="flex sm:justify-around mt-2 sm:flex-row flex-col bg-gradient-to-r from-blue-800 to-black relative ">
             <div className="w-[450px] rounded-lg shadow-xl  ">
               <Carousel>
                 {[
@@ -114,7 +115,7 @@ export default function ModularPartitions() {
               <li>Fire Proof Doors</li>
             </ul>
           </div>
-          <div className="flex sm:justify-around mt-2 sm:flex-row flex-col bg-gradient-to-r from-green-400 via-blue-600 to-purple-600  relative ">
+          <div className="flex sm:justify-around mt-2 sm:flex-row flex-col bg-gradient-to-r from-blue-800 to-black  relative ">
             <div className="w-[450px]  rounded-lg shadow-xl  ">
               <Carousel>
                 {[

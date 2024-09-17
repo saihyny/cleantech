@@ -8,7 +8,7 @@ function HeroSection() {
       <div className="navbar">
         <NavBar />
       </div>
-      <div className="banner-text  ">
+      <div className="banner-text mx-2  ">
         <section class="flex justify-center items-center     ">
           <div className="mx-auto border-solid border-2 max-w-screen-xl px-2 py-10 lg:flex  lg:items-center rounded-md backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-2xl  ">
             <div className="mx-auto max-w-3xl text-center">
@@ -28,7 +28,7 @@ function HeroSection() {
                 </span>
               </h1>
 
-              <p className="mx-auto mt-4 max-w-xl sm:/relaxed  text-black dark:text-white">
+              <p className="mx-auto mt-4 max-w-xl sm:dark:text-white sm:/relaxed text-white  sm:text-black dark:text-white">
                 Kshetra offers the products, components and services that are
                 specifically designed & manufactured as per the letest guidlines
                 of NABH and ISO standards{" "}
@@ -43,8 +43,8 @@ function HeroSection() {
                 </a>
 
                 <a
-                  className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-black hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto
-                  dark:text-white"
+                  className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium  hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto
+                   sm:dark:text-white sm:/relaxed text-white  sm:text-black dark:text-white"
                   href="/contactUS"
                 >
                   contact us
@@ -55,7 +55,7 @@ function HeroSection() {
         </section>
       </div>
 
-      <div className="flex w-[100vw] h-[100vh] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  lg:bg-none ">
+      <div className="flex w-[100vw] h-[100vh] bg-gradient-to-r from-blue-800 to-black  lg:bg-none ">
         <div className="hidden lg:block ">
           <div className=" ">
             <Image

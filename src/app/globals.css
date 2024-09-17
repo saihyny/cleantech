@@ -25,11 +25,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 
-  overflow-x: hidden;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
   height: 100vh; /* Added to set full viewport height */
   margin: 0;
   padding: 0;
-  overscroll-behavior: contain;
 }
 
 @layer utilities {
