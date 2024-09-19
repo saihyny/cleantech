@@ -1,11 +1,33 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ProductsMobileNav from "./productMobileNav";
 import logo from "../../app/../../public/image/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { gsap } from "gsap";
+
 export default function ProductsNav() {
+  let linksRef = useRef();
+  useEffect(() => {
+    let links = linksRef.current?.querySelectorAll("li");
+    let tl = gsap.timeline();
+
+    // Set initial state
+    gsap.set([ links], { opacity: 0, y: -20 });
+
+    if (links) {
+      tl.to(links, {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        delay: 0.5,
+        ease: "power2.out",
+        stagger: 0.3,
+      });
+    }
+  }, []);
+
   const pathname = usePathname();
   //    MOBILE VIEW
   const [isCollapce, setCollapce] = useState(false);
@@ -70,11 +92,14 @@ export default function ProductsNav() {
         </button>
         {isCollapce && <ProductsMobileNav />}
         <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
+          <ul
+            className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 "
+            ref={linksRef}
+          >
             <li>
               <Link
                 href="/"
-                className="block py-2 px-3 text-white  rounded md:bg-transparent  md:p-0   md:dark:bg-transparent"
+                className="block py-2 px-3 dark:text-white text-black rounded md:bg-transparent  md:p-0   md:dark:bg-transparent"
                 aria-current="page"
               >
                 Home
@@ -105,7 +130,7 @@ export default function ProductsNav() {
                 CleanRoom Equipments
               </Link>
             </li>
-           
+
             <li>
               <Link
                 href="/HVAC"

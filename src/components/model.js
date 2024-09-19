@@ -11,7 +11,7 @@ export default function Model() {
         <div
           id="popup-modal"
           tabindex="-1"
-          class="fixed bottom-5 right-5 z-50 justify-center items-center w-full max-w-md"
+          class="fixed inset-0 z-50 flex justify-center items-center w-full"
         >
           <div class="relative p-4 w-full max-w-md">
             <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">

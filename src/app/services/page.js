@@ -33,11 +33,11 @@ export default function Services() {
           </span>
         </h2>
       </div>
-      <section className="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-10 items-start text-black "
+      <section className="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-10 items-start text-white  "
       >
 
         <section
-          className="p-5 py-10 bg-purple-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md"
+          className="p-5 py-10 border border-neutral-800 bg-neutral-900/50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md shadow-2xl "
           onClick={motRouter}
         >
           <Image
@@ -57,7 +57,7 @@ export default function Services() {
         </section>
 
         <section
-          className="p-5 py-10 bg-red-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md"
+          className="p-5 py-10 border border-neutral-800 bg-neutral-900/50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md"
           onClick={modularICU}
         >
           <Image
@@ -79,7 +79,7 @@ export default function Services() {
         </section>
 
         <section
-          className="p-5 py-10 bg-blue-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md"
+          className="p-5 py-10 border border-neutral-800 bg-neutral-900/50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md"
           onClick={ivfLabs}
         >
           <Image
@@ -110,10 +110,10 @@ export default function Services() {
           </span>
         </h2>
       </div>
-      <section className="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-10 items-start text-black ">
+      <section className="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-10 items-start text-white ">
 
         <section
-          className="p-5 py-10 bg-purple-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md"
+          className="p-5 py-10 border border-neutral-800 bg-neutral-900/50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md shadow-2xl "
           onClick={modularPartitions}
         >
           <Image
@@ -134,7 +134,7 @@ export default function Services() {
         </section>
 
         <section
-          className="p-5 py-10 bg-red-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md"
+          className="p-5 py-10 border border-neutral-800 bg-neutral-900/50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md"
           onClick={CleanRoomEquipments}
         >
           <Image
@@ -156,7 +156,7 @@ export default function Services() {
         </section>
 
         <section
-          className="p-5 py-10 bg-blue-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md"
+          className="p-5 py-10 border border-neutral-800 bg-neutral-900/50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md"
           onClick={HVAC}
         >
           <Image

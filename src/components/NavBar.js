@@ -1,12 +1,50 @@
-"use client"; //use client is used for Client Components
-// import logo from "../image/logo.png";
-import { useState } from "react";
+"use client"; 
+import { useRef, useState , useEffect} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import MobileNav from "./mobileNav";
 import { usePathname } from "next/navigation";
+import { gsap } from "gsap";
+
 
 export default function NavBar() {
+   
+
+  const navBarRef = useRef();
+  const linksRef = useRef()
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      let logoRef = navBarRef.current;
+      let links = linksRef.current?.querySelectorAll("li"); // Select all <li> elements
+      let tl = gsap.timeline();
+
+      // Set initial state
+      gsap.set([logoRef, links], { opacity: 0, y: -20 });
+
+      if (logoRef) {
+        tl.to(logoRef, {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          delay: 0.5,
+          ease: "power2.out",
+        });
+      }
+      if (links) {
+        tl.to(links, {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          delay: 0.5,
+          ease: "power2.out",
+          stagger:0.3
+        });
+      }
+    }
+  }, []); // Empty dependency to run once on mount
+
+
   const pathname = usePathname();
   //  NAVBAR DROPDOWN FOR SERVIESE
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -32,11 +70,12 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 z-11 backdrop-filter backdrop-blur-lg bg-opacity-40 w-full ">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 ">
+    <nav className="  bg-gray-900 border-gray-500 fixed top-0 z-11 backdrop-filter backdrop-blur-lg bg-opacity-40 w-full ">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 " >
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
+          ref={navBarRef}
         >
           <Image
             src='/image/logo.png'
@@ -88,8 +127,8 @@ export default function NavBar() {
         </button>
         {isCollapce && <MobileNav />}
         <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
-            <li>
+          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 " ref={linksRef} >
+            <li >
               <Link
                 href="/"
                 className={`${
@@ -106,7 +145,7 @@ export default function NavBar() {
               <button
                 id="dropdownNavbarLink"
                 data-dropdown-toggle="dropdownNavbar"
-                className="flex z-100 items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                className="flex z-100 items-center justify-between w-full py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
               >
                 Services{" "}
                 <svg
@@ -165,7 +204,7 @@ export default function NavBar() {
                 // onClick={toggleDropdownforSvs}
                 id="dropdownNavbarLink"
                 data-dropdown-toggle="dropdownNavbar"
-                className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                className="flex items-center justify-between w-full py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
               >
                 Products{" "}
                 <svg
@@ -229,7 +268,7 @@ export default function NavBar() {
                   pathname === "/aboutUS"
                     ? " md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600"
                     : ""
-                }block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
+                }block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
               >
                 About Us
               </Link>
@@ -241,7 +280,7 @@ export default function NavBar() {
                   pathname === "/contactUS"
                     ? " md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600"
                     : ""
-                }block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
+                }block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
               >
                 Contact Us
               </Link>

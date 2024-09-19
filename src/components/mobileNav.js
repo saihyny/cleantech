@@ -8,7 +8,7 @@ function MobileNav() {
   return (
     <div
       id="dropdownNavbar"
-      className="flex flex-col font-normal  divide-y divide-gray-100 rounded-lg bg-transparent  w-full dark:bg-gray-700 dark:divide-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-2xl "
+      className="flex flex-col font-normal  divide-y divide-gray-100 rounded-lg bg-transparent  w-full backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-2xl "
     >
       <div className="py-1">
         <Link
